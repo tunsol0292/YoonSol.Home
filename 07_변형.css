@@ -1,0 +1,44 @@
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: skyblue;
+    margin: 10px;
+}
+
+/* 2D형태 */
+
+#test01:hover{
+
+    /* 비틀기 */
+    transform: skewX(30deg);
+    transform: skewY(30deg);
+
+    /* 각도 */
+    /* transform: rotate(-90deg); */
+
+    /* 크기 */
+    /* transform: scale(2, 1);
+    transform: scaleY(2); */
+
+    /* 이동 */
+    /* transform: translate(100px, 100px);
+    /* transform: translateX(100px);
+    transform: translateY(-100px); */
+}
+
+/* 3D 형태 */
+
+#test02:hover{
+    /* transform: perspective(300px) translateZ(100px); */
+
+    transform: perspective(300px) rotate3d(0,1,1,45deg);
+
+}
+
+/* 뒤집기 */
+
+#test03:hover{
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+
+}
